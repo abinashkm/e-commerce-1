@@ -28,7 +28,7 @@
 
 html {
   @extend %body;
-  background: var(--color-dark-50);
+  background: var(--theme-bg);
   -webkit-font-smoothing: antialiased;
   opacity: 0;
 
@@ -47,7 +47,7 @@ body,
 body {
   font-family: var(--font-jost);
   margin: 0;
-  padding: 0; // also called as resetting default styling.
+  padding: 0;
   color: var(--color-dark-500);
 
   display: flex;
@@ -57,7 +57,6 @@ body {
 .main {
   flex: 1 1 auto;
 }
-
 
 ::selection {
   background: var(--color-dark-500);
@@ -100,7 +99,7 @@ h6 {
 }
 
 p {
-  margin: 0; 
+  margin: 0;
 }
 
 ul,
@@ -112,6 +111,7 @@ ol {
 
 a {
   color: var(--color-dark-500);
+  text-decoration: none;
 
   &:focus {
     opacity: .8;
